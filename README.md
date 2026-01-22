@@ -18,21 +18,21 @@ I built a robust data model and three targeted dashboards to solve these problem
 * **Key Insight:** Identified **$118K in Missed Profit Opportunity**.
 * **Action:** Highlighted "Allergy Relief" as the top category for intervention and created a "Switch List" for store staff.
 
-![Strategy Dashboard](Strategy_Dashboard.png)
+![Strategy Dashboard](Screenshots/Strategy_Dashboard.png)
 
 #### **2. Operations & Quality Dashboard (Manager View)**
 * **Goal:** Monitor store efficiency and fix data errors.
 * **Key Insight:** Flagged **2.2% of transactions** with missing costs, calculating a Data Integrity Score of **97.78%**.
 * **Action:** Used conditional formatting to spot underperforming stores (e.g., Ottawa at -1.68% growth).
 
-![Ops Dashboard](Ops_Dashboard.png)
+![Ops Dashboard](Screenshots/Ops_Dashboard.png)
 
 #### **3. Clinical Dashboard (Director View)**
 * **Goal:** Track the shift from Retail to Healthcare.
 * **Key Insight:** Clinical services now contribute **12.08%** of total revenue.
 * **Action:** Validated that 'RxHealthMed' banner stores outperform standard locations in service delivery.
 
-![Clinical Dashboard](Clinical_Dashboard.png)
+![Clinical Dashboard](Screenshots/Clinical_Dashboard.png)
 
 ---
 
@@ -44,7 +44,7 @@ I designed a **Snowflake Schema** to ensure data integrity and performance.
 * **Date Table:** Created a dedicated `Dim_Date` table using DAX to support Time Intelligence functions like `SAMEPERIODLASTYEAR`.
 * **Relationships:** Established One-to-Many relationships between the Fact table and Dimensions.
 
-![Data Model](Data_Model.png)
+![Data Model](Screenshots/Data_Model.png)
 
 #### **DAX Complexity**
 * **Iterators (SUMX):** Used `SUMX` to calculate the *Missed Profit Opportunity* row-by-row at the Sub-Category level, ensuring accurate margin calculations despite varying product costs.
